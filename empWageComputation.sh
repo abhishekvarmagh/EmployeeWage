@@ -1,3 +1,9 @@
 #! /bin/bash -x
 
-echo "Welcome to Employee Wage"
+readNumber=$(( RANDOM%2 ))
+if [ $readNumber -eq 1 ]
+then
+	echo "Present"
+else
+	echo "Absent"
+fi
